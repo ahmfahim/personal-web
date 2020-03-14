@@ -20,7 +20,7 @@
     margin-top: -10px;
 }
 .position-bg:hover{
-    background-image: linear-gradient(rgb(255, 196, 119),cyan,blue);
+    background-image: linear-gradient(rgb(147, 255, 147),cyan,blue);
     color: rgb(105, 0, 0);
 }
 .position-bg h1{
@@ -191,217 +191,142 @@
  }
  /**Skill section**/
 
-#skill{
+.skill-section  {
     background: url(../img/skill-bg.jpg);
     background-attachment: fixed;
-    min-height: 500px;
     background-size: cover;
+    padding: 60px 0;
+}
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.section-title{
+    text-align: center;
+    color: rgb(75, 224, 75);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.border{
+    width: 160px;
+    height: 2px;
+    background: #58e0ff;
+    margin: 40px auto;
+
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-box{
+    padding: 40px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+    border: 0px solid #82ccdd;
+    width: 300px;
+    margin: 20px;
+
+}
+.service-icon{
+    display: inline-block; 
+    width: 70px;
+    height: 70px;
+    border:3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 18px;
+}
+.service-icon .icon{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 30px;
+}
+.service-icon:hover{
+    background:#bbe7f1;
+    color: blue;
+}
+.service-title{
+    font-size: 30px;
+    color: Black;
+}
+.service-desc{
+    color: dimgray;
+}
+.w-color{
+    color: red;
 }
 
- .header h1{
-     padding-top: 80px;
-     margin-top: 40px;
-     color: rgb(0, 0, 0);
-     text-shadow: 0 0 10px dimgray;
- }
- .cd-body{
-     margin-top: 80px;
-     padding-bottom: 100px;
- }
- .card{
-     border: none;
-     box-shadow: 0 0 10px gray;
-     border-radius: 10px;
-     height: 150px;
-     font-weight: 900;
-     color: dimgray;
- }
- .card:hover{
-     border: 2px solid tomato;
-     color: rgb(255, 115, 0);
-     background-color: rgba(255, 255, 255, 0);
-     border-radius: 10px;
- }
-.cd-animation{   
-    animation-name: rainbowtext10;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite; 
-}
-@keyframes rainbowtext10{
-    0%{
-        color: rgb(255, 0, 0);
-        font-size: 20px;
-    }
-    25%{
-        color: rgb(251, 255, 0);
-    }
-    50%{
-        color:rgb(21, 255, 0);
-        font-size: 20px;
-    }
-    75%{
-        color: tomato;
-        font-size: 20px;
-    }
-    100%{
-        color: rgb(251, 255, 0);
-        font-size: 20px;
-    }
-} 
-.cd-animation2{   
-    animation-name: rainbowtext11;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite; 
-}
-@keyframes rainbowtext11{
-    0%{
-        color: rgb(255, 0, 0);
-        font-size: 20px;
-    }
-    25%{
-        color:rgb(70, 104, 255);
-    }
-    50%{
-        color: rgb(255, 38, 0);
-        font-size: 20px;
-    }
-    75%{
-        color:rgb(0, 0, 0);
-        font-size: 20px;
-    }
-    100%{
-        color: rgb(251, 255, 0);
-        font-size: 20px;
-    }
-}
 
-.cd-animation3{   
-    animation-name: rainbowtext13;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite; 
-}
-@keyframes rainbowtext13{
-    0%{
-        color: rgb(255, 0, 0);
-        font-size: 20px;
-    }
-    25%{
-        color:rgb(70, 104, 255);
-    }
-    50%{
-        color: tomato;
-        font-size: 20px;
-    }
-    75%{
-        color:rgb(21, 255, 0);
-        font-size: 20px;
-    }
-    100%{
-        color: rgb(251, 255, 0);
-        font-size: 20px;
-    }
-}
-.cd-animation4{   
-    animation-name: rainbowtext15;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite; 
-}
-@keyframes rainbowtext15{
-    0%{
-        color: rgb(255, 0, 0);
-        font-size: 20px;
-    }
-    25%{
-        color:rgb(70, 104, 255);
-    }
-    50%{
-        color: tomato;
-        font-size: 20px;
-    }
-    75%{
-        color:rgb(0, 255, 0);
-        font-size: 20px;
-    }
-    100%{
-        color: orange;
-        font-size: 20px;
-    }
-}
 
  /**latest work**/
- .latest-color h3{
-     color: dimgray;
-     background-color: gold;
-     width: max-content;
-     text-align: center;
- }
- .latest-color img{
-     width:100%;
-     border: gold 2px solid;
- }
-.link-btn {
-    background-image: linear-gradient(yellow,rgb(255, 208, 0));
-    border-radius: 10px;
-    padding:10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 900;
-    color: white;
-    text-shadow: 0 0 5px gray;
+.latest-section{
+    background: url(../img/latest-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.link-btn{ 
-    animation-name: rainbowtext5;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite; 
-}
-@keyframes rainbowtext5{
-    0%{
-        color: rgb(0, 255, 0);
-        font-size: 20px;
-    }
-    25%{
-        color:rgb(255, 9, 255);
-    }
-    50%{
-        color: orange;
-        font-size: 20px;
-    }
-    75%{
-        color:greenyellow;
-        font-size: 25px;
-    }
-    100%{
-        color: rgb(251, 255, 0);
-        font-size: 20px;
-    }
-} 
-.latest-head img{
+.latest-img img{
     width: 100%;
-    margin-top:100px;
-    margin-bottom: 20px; 
+    height: 400px;
+    padding-left: 20px;
 }
-.latest-bg{
-    margin-bottom: 100px;
+.latest-title{
+    color: white;
+    font-size:30px;
+    font-weight: 700;
+    padding-top:0px;
 }
-.web-head h1{
-    margin-bottom: 30px;
-    border-bottom: orange solid 2px;
-    width: 200px;
+.h-color{
+    color: rgb(0, 196, 0);
+    font-size: 35px;
+}
+.latest-title p{
+    color: rgb(0, 255, 128);
+}
+
+.spacer{clear:both;}
+
+a:hover
+{
+	text-decoration:none;
+}
+a:focus
+{
+	text-decoration:none;
+}
+
+.fullimage
+{
+	 width:100%; 
+	 height:400px;
 }
 
 /** portfilio section**/
-.port-head img{
+.portfolio-section{
+    background: url(../img/portfolio-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.port-img img{
     width: 100%;
+}
+.port-title{
+    font-size: 30px;
+    padding-top: 100px;
+    color: white;
+    padding-right: 10px;
 }
 .diamond-grid{
     width: 100%;
@@ -428,6 +353,7 @@
     margin-top: 100px;
     padding-top:50px;
     text-align: center;
+    color: white;
 }
 .contact-hed{
     text-align: center;
@@ -467,18 +393,18 @@ h1.header {
     }
 }
 .link-color{
-    color: dimgray;
-    font-weight: 900;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;  
 }
 .contact-bg{
-    background-color:rgb(231, 231, 231);
+    background-color:rgb(0, 0, 0);
     text-align: center;
     border-radius: 10px;
 }
 .l1, .l2, .l3, .l4{
     padding-bottom: 10px;
+}
+.font-size{
+   font-size: 60px;
 }
 
 /** footer **/
