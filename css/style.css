@@ -66,22 +66,22 @@
 @keyframes rainbowtext{
     0%{
         color: red;
-        font-size: 70px;
+        font-size: 50px;
     }
     25%{
         color:purple;
     }
     50%{
         color: yellow;
-        font-size: 70px;
+        font-size: 50px;
     }
     75%{
         color:greenyellow;
-        font-size: 70px;
+        font-size: 50px;
     }
     100%{
         color: orange;
-        font-size: 70px;
+        font-size: 50px;
     }
 }
 .animation-2{
