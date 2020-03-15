@@ -93,7 +93,7 @@
     </div>
     <!--Skill section-->
 
-    <div class="skill-section">
+    <div class="skill-section" id="skill">
       <div class="inner-width">
         <h1 class="section-title  wow bounceInLeft"><span class="w-color">What</span> I know</h1>
         <div class="border"></div>
@@ -151,19 +151,115 @@
       </div>
     </div>
 
+    <!--Software skill-->
+
+    <div class="container wow bounceInLeft">
+      <h1 class="progress-title">--<span>Software</span> Skill</h1>
+
+        <p>Adobe Photoshop</p>
+        <div id="bar1" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="75"></span>
+        </div>
+
+        <p>Adobe Illustrator</p>
+        <div id="bar2" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="65"></span>
+        </div>	
+        
+        <p>Adobe XD</p>
+        <div id="bar3" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="45"></span>
+        </div>	
+
+        <p>Visual Studio Code</p>
+        <div id="bar4" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="55"></span>
+        </div>	
+        <p>Microshoft Ofiice</p>
+        <div id="bar5" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="60"></span>
+        </div>	
+        
+      </div>
+      
+    </div>
+
+    <!--language skill-->
+
+    <div class="container wow bounceInRight">
+      <h1 class="progress-title" > <span>--</span>Language <span>Skill</span> </h1>
+
+        <p>HTML5</p>
+        <div id="bar6" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="88"></span>
+        </div>
+
+        <p>CSS3</p>
+        <div id="bar7" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="80"></span>
+        </div>	
+        
+        <p>Bootstrap4</p>
+        <div id="bar8" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="66"></span>
+        </div>	
+
+        <p>javascript</p>
+        <div id="bar9" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="40"></span>
+        </div>	
+        <p>Python3</p>
+        <div id="bar10" class="barfiller">
+            <div class="tipWrap">
+          <span class="tip"></span>
+            </div>
+            <span class="fill" data-percentage="35"></span>
+        </div>	
+        
+      </div>
+      
+    </div>
+
     
 
     
 
 
     <!--latest work-->
-    <div class="container-fluid latest-section">
+    <div class="container-fluid latest-section" id="latest">
       <div class="row d-flex justify-content-center">
         <div class="col-md 6 wow bounceInLeft latest-title"><span class="h-color">Here</span> Here some of my creativity that's I done last.
           <p>খুব বেশি না জানলেও একটু জানার প্রচেষ্টা, আর যা একটু জানি সেখান থেকে কিছু করার চেষ্টা ।</p>
         </div>
         <div class="col-md-6 wow bounceInRight latest-img">
-          <img src="img/latest-left.png" alt="">
+          <img src="img/letest-left.png" alt="">
         </div>
       </div>
     </div>
@@ -212,18 +308,21 @@
 
     <!--Portfolio section-->
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" id="portfolio">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6 wow bounceInLeft port-img">
           <img src="img/portfolio.png" alt="">
         </div>
-        <div class="col-md 6 wow bounceInRight port-title"><span class="h-color">Some</span>of my Wow image.
+        <div class="col-md 6 wow bounceInRight port-title">
+          <h1>Portfolio</h1>
+          <span class="h-color">Some</span> of my Wow image.
           <p>হুম ! পাগল টা আমি ! দেখতে যেমনি হই মনটা আলহামদুলিল্লাহ ভালো।</p>
+          
         </div>
       </div>
     </div>
 
-    <div class="container wow flash">
+    <div class="container container-fluid wow flash">
       <div class="diamond-grid d-flex justify-content-center">
         <div class="item">
           <img src="img/portfolio/pro-3.jpg" alt="">
@@ -326,6 +425,7 @@
     <script src="css/bootstrap/js/wow.js"></script>
     <script src="css/bootstrap/js/wow.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="css/bootstrap/js/jquery.barfiller.js"></script>
     <script>
     new WOW().init();
     </script>
@@ -367,6 +467,26 @@
     });
         
     </script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+      
+        $('#bar1').barfiller({ barColor: 'linear-gradient(45deg,red,orange)',duration: 1000 });
+        $('#bar2').barfiller({ barColor: 'linear-gradient(45deg,lightgreen,cyan)',duration: 2000 });
+        $('#bar3').barfiller({ barColor: 'linear-gradient(45deg,yellow,red)',duration: 2500 });
+        $('#bar4').barfiller({ barColor: 'linear-gradient(45deg,blue,cyan)' , duration: 2800 });
+        $('#bar5').barfiller({ barColor: 'linear-gradient(45deg,red,yellow,orange)',duration: 3000 });
+        $('#bar6').barfiller({ barColor: 'linear-gradient(45deg,purple,cyan)',duration: 3300 });
+        $('#bar7').barfiller({ barColor: 'linear-gradient(45deg,red,yellow,orange)',duration: 3500 });
+        $('#bar8').barfiller({ barColor: 'linear-gradient(45deg,lightgreen,cyan)',duration: 3800 });
+        $('#bar9').barfiller({ barColor: 'linear-gradient(45deg,red,orange)',duration: 3900 });
+        $('#bar10').barfiller({ barColor: 'linear-gradient(45deg,blue,cyan)',duration: 4000});
+
+        
+        
+      });
+      
+      </script>
     <script type="text/javascript">
       $(".diamond-grid").diamonds({
           size : 180, // Size of diamonds in pixels. Both width and height. 
