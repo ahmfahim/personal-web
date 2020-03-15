@@ -169,26 +169,7 @@
         font-size: 20px;
     }
 }
-/**load animation**/
-.load{
-    margin-top: 600px;
-    margin:auto;
-    border: 16px solid ;
-    width: 200px;
-    height: 200px;
-    border-top-color: red;
-    border-bottom-color: green; 
-    border-radius: 100px;
-    animation:spin 2s linear infinite;
- }
- @keyframes spin{
-     0%{
-         transform:rotate(0deg) ;
-     }
-     100%{
-         transform:rotate(360deg) ;
-     }
- }
+
  /**Skill section**/
 
 .skill-section  {
@@ -209,6 +190,7 @@
     color: rgb(75, 224, 75);
     text-transform: uppercase;
     font-size: 30px;
+    text-shadow: 10px 10px 10px dimgray;
 }
 .border{
     width: 160px;
@@ -322,7 +304,48 @@
     margin-top: 30px;
 }
 
+/**load animation**/
+.load{
+    margin-top: 600px;
+    margin:auto;
+    border: 5px solid  rgb(167, 167, 167);
+    width: 150px;
+    height: 150px;
+    border-top-color: yellow;
+    border-left-color: yellow; 
+    box-shadow: 0 0 10px dimgray;
+    border-radius: 100px;
+    animation:spin 2s linear infinite;
+ }
+ @keyframes spin{
+     0%{
+         transform:rotate(0deg) ;
+     }
+     100%{
+         transform:rotate(360deg) ;
+     }
+ }
+.load-2{
+    width: 20px;
+    height: 20px;
+    color: yellow;
+    border: 10px solid yellow;
+    border-radius: 100px;
+    box-shadow: 0 0 10px dimgray;
+    margin-left: 105px;
+}
 
+.load-animation{
+    margin-top:100px;
+}
+.load-title{
+    text-align: center;
+    margin-top: 30px;
+}
+.load-title span{
+    color: yellow;
+    text-shadow: 0 0 20px dimgray;
+}
  /**latest work**/
 .latest-section{
     background: url(../img/latest-bg.jpg);
@@ -342,6 +365,8 @@
     font-size:30px;
     font-weight: 700;
     padding-top:0px;
+    text-align: center;
+    text-shadow: 0 0 10px dimgray;
 }
 .h-color{
     color: rgb(0, 196, 0);
