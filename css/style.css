@@ -176,7 +176,7 @@
  /**Skill section**/
 
 .skill-section  {
-    background: url(../img/skill-bg.jpg);
+    background: url(../img/background.png);
     background-attachment: fixed;
     background-size: cover;
     padding: 60px 0;
@@ -217,13 +217,13 @@
     margin: 20px;
     border: 0px solid black;
     background: rgba(0, 0, 0, 0.384);
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 30px rgb(27, 1, 1);
 
 }
 .service-box:hover{
     background: black;
     transition: 1s;
-    box-shadow: 0 20px 10px dimgray;
+    box-shadow: 0 10px 10px rgb(44, 1, 1);
 }
 .service-icon{
     display: inline-block; 
@@ -632,6 +632,28 @@ li{
     font-size: 40px;
     transform: rotate(-15deg);
 }
+
+/* ----------------let's have some fun----------------- */
+.fun-title1{
+    color: rgb(255, 17, 17);
+    text-shadow: 0 0 10px dimgray;
+}
+.fun-title1 span{
+    color: rgb(60, 255, 0);
+}
+.fun-title2{
+    color: rgb(230, 37, 255);
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgb(139, 139, 139);
+}
+.fun-title2 span{
+    color: orange;
+}
+.funEmoji{
+    
+}
+/* ---------------------------------------------form------------------------------------------------- */
 
 /** footer **/
 .foot{
